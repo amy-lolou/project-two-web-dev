@@ -1,0 +1,738 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+/* Base Styles */
+body,
+ul,
+h1,
+h2,
+h3
+p,
+button,
+nav {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Playfair Display', serif;
+	font-family: 'Great Vibes', cursive;
+	font-size: 1.6rem;
+    color: #23292c;
+	background: #eae5d6;	
+}
+
+.wrapper {
+	max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+h2 span {
+	color: #e1560e;
+}
+
+/* Homepage Styles */
+header {
+	background-image: url(./assets/image-1.jpeg);
+	background-size: cover;
+	background-position: center center;
+	height: 100vh;
+	width: 100%;
+	position: relative;
+}
+
+div.headerLogo {
+	max-width: 100%;
+	height: auto;
+	position: absolute;
+	left: 390px;
+	top: 180px;
+}
+
+div.headerDetails {
+	text-align: center;
+	padding: 15px 25px;
+	background: #e1560e;
+	position: relative;
+	left: 665px;
+	bottom: 130px;
+	color: #fff;
+	font-size: 0.7rem;
+}
+/* Header Basics */
+.headerNav,
+.headerCopyright p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.5rem;
+	margin: 0 auto;
+}
+
+.copyP {
+	margin: 0 auto;
+}
+
+.twitterLink p {
+	word-spacing: 1.5px;
+	text-transform: capitalize;
+	padding: 5px;
+}
+
+.twitterLink span {
+	color: #e1560e;
+	text-transform: lowercase;
+}
+
+.navLogo img {
+	margin: 0 auto;
+	max-width: 50%;
+	max-height: auto;
+	position: relative;
+	left: 40px;
+	top: 30px;
+}
+
+/* Header Nav */
+div.headerNav  {
+	background-color: #23292c;
+	opacity: 0.8;
+	text-transform: uppercase;
+	color: #467692;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+}
+
+.headerNav ul {
+	margin-top: 100px;	
+	width: 150px;
+}
+
+.headerNav li {
+	position: relative;
+	bottom: 0;
+}
+
+.headerNav li {
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px;
+	
+}
+
+.headerNav li i {
+	margin: 0 auto;
+	letter-spacing: 2.5px;
+}
+
+div .headerNav li:hover,
+div .headerNav li:focus {
+	color: #fff;
+}
+
+.twitterLink {
+position: relative;
+bottom: -70px;
+text-transform: lowercase;
+font-size: 0.6rem;
+text-align: center;
+width: 150px;
+margin-left: 10px;
+}
+
+i.fab  {
+	font-size: 1.1rem;
+	text-align: center;
+}
+
+i.orange-twitter {
+	color:  #e1560e;
+	font-size: 1.6rem;
+}
+
+div .twitterLink:hover a,
+div .twitterLink:focus a {
+	color: #fff;
+}
+
+.headerCopyright {
+	text-transform: capitalize;
+	text-align: center;
+}
+.headerCopyright ul {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+.headerCopyright li {
+	margin: 30px 10px;
+}
+
+/* Services Styling */
+.servicesSection {
+	margin: 90px;
+
+}
+
+.serviceIntro h2,
+.dishesIntro h2 {
+	font-size: 2.7rem;
+	text-align: center;
+}
+
+.servicesSection p,
+.dishesIntro p {
+	font-family: 'Playfair Display', serif;
+	font-size: 0.9rem;
+	color: #5e6163;
+	text-align: center;
+	width: 80%;
+	margin: 50px auto;
+}
+
+.serviceIcons p {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+	font-family: 'Open Sans', sans-serif;
+	color: #e1560e;
+	font-size: 1.3rem;
+	font-weight: lighter;
+	text-align: center;
+}
+
+.serviceIcons {
+	display: flex;
+	margin: 30px;
+	width: calc( 100% / 4) + 60px);
+}
+
+.coffeeImage,
+.chinesefoodImage,
+.pastaImage,
+.plateImage {
+	text-align: center;
+}
+/* this was sitting slightly higher than the others for some reason */
+.plate {
+	position: relative;
+	top: 12px;
+}
+
+/* Food Gallery Styling */
+
+.dishesSection {
+	background-color: #23292c;
+	color: #fff;
+	position: relative;
+}
+
+.dishesIntro h2 {
+	margin: 50px auto;
+	padding-top: 90px;
+}
+
+.dishesIntro p {
+	color: #fff;
+}
+
+.dishlist li {
+	display: flex;
+	justify-content: center;
+	border: 1px solid #3b4347;
+	width: 500px;
+	position: relative;
+	left: 330px;
+	margin: 40px;
+}
+
+.dishlist li p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.7rem;
+	text-transform: uppercase;
+	margin: 5px 15px;	
+    padding: 5px 15px;
+	border-right: 1px solid #3b4347;
+	border-left: 1px solid #3b4347;
+}
+
+.dishlist li p:hover,
+.dishlist li p:focus {
+	color: #e1560e;
+}
+
+.foodSection {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.food-gallery {
+	position: relative;
+	width: calc(100% / 5);
+}
+
+.food-gallery img {
+	width: 100%;
+	height: 100%;	
+}
+
+.food-gallery h3 {
+	font-family: 'Playfair Display', serif;
+	font-size: 0.9rem;
+	text-transform: capitalize;
+	color: #fff;
+}
+
+.food-gallery p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.7rem;
+	text-align: center;
+}
+
+.food-gallery h3,
+.food-gallery p {
+	position: absolute;
+}
+
+.food-gallery h3 {
+	top:25px;
+}
+
+.food-gallery p {
+bottom: 50px;
+width: 160px;
+letter-spacing: 1px;
+text-transform: lowercase;
+}
+
+.overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	background: rgba(0,0,0,0.6);
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;	
+}
+
+.overlay:hover,
+.overlay:focus {
+	opacity: 1;
+}
+/* Footer Styling */
+
+footer {
+	background-color: #23292c;
+	color: #697a83;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.6rem;
+	width: 100%;
+	height: 90vh;
+	position: relative;
+}
+
+.footerMap img {
+	max-width: 100%;
+	height: auto;
+	position: absolute;
+	left: 0;	
+}
+
+.mapIcon img {
+	max-width: 1.8%;
+	height: auto;
+	position: absolute;
+	right: 700px;
+	top: 45px;	
+	filter: drop-shadow( 10px 2px  0.8px #898e96);
+}
+
+div .contactForm {
+	background: #fff;
+	max-width: 450px;
+	height: 400px;
+	position: relative;
+	left: 350px;
+	top: 150px;
+}
+
+.contactForm h2 {
+	font-family: 'Great Vibes', cursive;
+	font-size: 3.0rem;
+	color: #23292c;
+	font-weight: lighter;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.contactForm h2 span {
+	color: #e1560e;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	position: relative;
+}
+
+input,
+textarea {
+	width: 80%;
+	padding: 8px;
+	margin: 10px 40px 0;
+	display: flex;
+	align-content: center;
+	background-color: #f5fafad5;
+	border: 1px solid #cacfcf;
+	border-radius: 3px;	
+	resize: none;
+}
+
+.person,
+.mail {
+	position: relative;
+	left: 370px;
+	bottom: 20px;
+}
+
+button {
+	padding: 20px 40px;
+	margin: 15px auto;
+	border: 1px solid #000;
+	background-color: #fff;
+	font-size: 0.7rem;
+	text-transform: uppercase;
+	color: #000;
+} 
+
+button:hover,
+button:focus,
+button:active {
+	background-color: #e1560e;
+	color: #fff;
+	border: #cacfcf;
+}
+
+.contact  {
+display: flex;
+position: absolute;
+left: 965px;
+flex-direction: column;
+bottom: 180px;
+}
+
+.addressImage {
+	position: relative;
+	right: 30px;
+	top: 50px;
+}
+
+.phoneImage {
+	position: relative;
+	right: 30px;
+	top: 40px;
+}
+
+.mailImage {
+	position: relative;
+	right: 30px;
+	top: 15px;
+}
+
+.footerLogo img {
+position: absolute;
+bottom: 200px;
+left: 250px;
+}
+
+div .footerSocial {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footerSocial li {
+	position: relative;
+	bottom: -500px;
+	right: -100px;
+	margin: 8px;
+}
+
+.footerCopyright p {
+	position: absolute;
+	left: 600px;
+	bottom: 30px;
+}
+
+/* Media Styles */
+/*  when doing this in inspector tool the width still was able to move and showed the beige background, even though everything seems contained. Is that normal? should it be ding that? */
+@media (max-width: 750px) {
+	.wrapper {
+		width: 85%;
+	}
+
+/* Header */
+	header {
+		background-position: center center;
+		position: relative;
+}
+
+	div.headerLogo img {
+		position: relative;
+		right: 400px;
+		bottom: -100px;
+}
+
+	div.headerDetails {
+	position: absolute;
+	left: 330px;
+	bottom: -600px;
+}
+
+	div.headerNav {
+		display: flex;
+		width: 100%;
+		height: 15vh;
+}
+
+	.headerNav ul {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+}
+
+	.headerNav li {
+		position: relative;
+		top: -80px;
+		padding: 20px;
+		text-align: center;
+}
+
+.headerNav li:hover {
+	color: #fff;
+}
+
+	div.twitterLink,
+	.headerCopyright {
+		display: none;
+}
+
+/* Section One */
+
+.servicesSection {
+	margin: 20px;
+}
+.serviceIcons {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Second Section */
+.dishesSection {
+	position: relative;
+}
+
+.dishlist li {
+margin: 0 auto;
+left: 0;
+width: 75%;
+}
+
+.dishlist li p:hover,
+.dishlist li p:focus {
+	color:#fff;
+}
+.food-gallery {
+	margin-top: 20px;
+}
+
+.foodSection {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.food-gallery {
+	width: calc( 80% / 2);
+	margin: 30px 15px 30px 35px;	
+}
+
+/* Footer */
+
+div .contactForm {
+	position: relative;
+	top: -100px;
+	left: 170px;
+	width: 60%;
+}
+
+.footerLogo img {
+	position: absolute;
+	left: 35px;
+	top: 30px;
+}
+
+div .footerSocial {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	left: -80px;
+	top: -280px;	
+}
+
+.contact {
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+	bottom: 40px;
+	left: 30px;
+}
+
+.addressContact,
+.phoneContact,
+.emailContact {
+	margin:60px 80px 30px 80px;
+}
+
+.emailContact {
+	position: relative;
+	bottom: -30px;
+}
+
+.person,
+.mail,
+.footerCopyright p,
+.footerMap img, 
+.mapIcon img {
+	display: none;
+	flex-shrink: 1;
+}
+/* The map stumped me here, how could I have kept it? */
+}		
+
+@media (max-width: 360px){
+
+	/* Header  */
+
+	div.headerLogo img {
+		width: 100vw;
+		margin-left: 8px;
+	}
+
+	div.headerDetails {
+		position: absolute;
+		left: 120px;
+		width: 30vw;
+		margin: 0 auto;
+	}
+
+	.navLogo img {
+		position: absolute;
+		top: 5px;
+		left: 10px;
+		width: 15%;
+		display: none;
+	}
+	
+	.headerNav ul {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	.headerNav ul li {
+		margin: 0 auto;
+		width: calc(100% / 3);
+		color: #fff;	
+	}
+
+	/* Second Section */
+
+	.dishlist li p {
+		border: none;
+		padding: 10px;
+	}
+
+	.dishlist li {
+		display: flex;
+		flex-wrap: wrap;
+		border: none;	
+	}
+
+	.food-gallery {
+		width: 80%;
+	}
+
+/* I was stumped on what to do for the hover effect on the overlay when desgining for mobile. What could I have done? Is there a way that I could have changed the H3 and P to show above and below the photo? Thoughts?? :) */
+
+	/* Footer  */
+
+	.footerLogo img {
+		margin-left: 95px;
+		position: absolute;
+		top: 80px;
+	}
+
+	.footerSocial li {
+		padding: 20px;
+		position: relative;
+		margin: 0 auto;	
+	}
+
+	.contactForm {
+		display: none;
+	}
+
+	.contact {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		top: 350px;
+		margin-left: 95px;
+	}
+
+	.addressContact {
+		position: absolute;
+		bottom: 10px;
+		right: -80px;
+	}
+
+	.phoneContact {
+		margin-bottom: 20px;
+	}
+
+	.phoneContact {
+		position: absolute;
+		top: 150px;
+		padding-left: 20px;
+	}
+
+	.emailContact {
+		position: absolute;
+		top: 300px;
+		padding-left: 10px;
+	}
+}
+
